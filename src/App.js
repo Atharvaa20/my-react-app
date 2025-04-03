@@ -6,7 +6,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <p>CI/CD Pipeline Test - Auto Deployment</p>
+        <p>CI/CD Working!</p>
         <a
           className="App-link"
           href="https://reactjs.org"
