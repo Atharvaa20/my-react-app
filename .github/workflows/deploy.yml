@@ -15,7 +15,6 @@ jobs:
 
       - name: Install Dependencies & Build React App
         run: |
-          git pull origin main  # Ensure latest code is pulled
           npm install
           npm run build
 
@@ -36,7 +35,5 @@ jobs:
           username: ${{ secrets.AWS_USER }}
           key: ${{ secrets.AWS_PRIVATE_KEY }}
           script: |
-            sudo rm -rf /var/www/html/react-app/*  # Remove old files
-            sudo mv /var/www/html/react-app/build/* /var/www/html/react-app/
             sudo systemctl restart nginx
             sudo systemctl status nginx
