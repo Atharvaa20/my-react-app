@@ -25,7 +25,7 @@ jobs:
           host: ${{ secrets.AWS_HOST }}
           username: ${{ secrets.AWS_USER }}
           key: ${{ secrets.AWS_PRIVATE_KEY }}
-          source: "build"
+          source: "build/*"
           target: "/var/www/html/react-app"
           strip_components: 1
 
